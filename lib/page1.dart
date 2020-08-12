@@ -86,16 +86,6 @@ class _Page1State extends State<Page1> {
                 ],
               ),
             ),
-            Container(
-              height: data.size.height / 2 ,
-              width: data.size.width,
-              decoration: BoxDecoration(
-                  gradient: LinearGradient(
-                      begin: Alignment.topCenter,
-                      end: Alignment.bottomCenter,
-                      colors: [Colors.white, Colors.deepPurpleAccent])),
-              child: ListView(
-                children: <Widget>[
               Container(
               width: data.size.width * 3/4 ,
                 height: data.size.height * 1/4,
@@ -236,9 +226,7 @@ class _Page1State extends State<Page1> {
                         )
                     ),
                   ),
-                ],
-              ),
-            ),
+
           ],
         ),
       ),
