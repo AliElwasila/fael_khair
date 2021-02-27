@@ -21,7 +21,7 @@ class _PageViewerState extends State<PageViewer> {
     );
   }
 
-  List<Widget> pages = [Page1(), Page2(), Page3(), Page4(), Page5()];
+  List<Widget> pages = [Page1(), Page2(), Page4(), Page3(), Page5()];
   var controller;
   Widget build(BuildContext context) {
     return PageView(
