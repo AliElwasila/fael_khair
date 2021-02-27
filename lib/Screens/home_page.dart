@@ -2,6 +2,7 @@ import 'package:fael_khair/Screens/about_page.dart';
 import 'package:fael_khair/Screens/donate_page.dart';
 import 'package:fael_khair/Screens/gifts_page.dart';
 import 'package:fael_khair/Screens/notifications_page.dart';
+import 'package:fael_khair/Screens/settings.dart';
 import 'package:fael_khair/Screens/sign_in.dart';
 import 'package:fael_khair/Screens/sponsors_page.dart';
 import 'package:fael_khair/http.dart';
@@ -251,6 +252,14 @@ void initState(){
             },
           ),
           ListTile(
+            onTap: (){
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) {
+                  return Settings();
+                }),
+              );
+            },
             leading: Icon(
               Icons.settings,
               size: 25,
@@ -324,8 +333,8 @@ Widget sideMenu(BuildContext context) {
           children: <Widget>[
             view("الصحة", "images/image4.png", context, 0),
             view("التعليم", "images/image3.jpg", context, 1),
-            view("تعمير", "images/image1.jpg", context, 2),
-            view("غذاء", "images/image5.jpg", context, 3),
+            view("الإطعام", "images/image5.jpg", context, 2),
+            view("التعمير", "images/image1.jpg", context, 3),
             view("اخرى", "images/image2.jpg", context, 4),
           ],
         ),

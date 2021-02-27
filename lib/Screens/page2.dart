@@ -85,7 +85,7 @@ class _Page2State extends State<Page2> {
                         ),
                       ),
                       title: Text(
-                        "تعليم",
+                        "التعليم",
                         style: TextStyle(fontSize: 25),
                       ),
                     ),

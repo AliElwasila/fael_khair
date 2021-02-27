@@ -85,7 +85,7 @@ class _Page4State extends State<Page4> {
                         ),
                       ),
                       title: Text(
-                        "غذاء",
+                        "الإطعام",
                         style: TextStyle(fontSize: 25),
                       ),
                     ),
